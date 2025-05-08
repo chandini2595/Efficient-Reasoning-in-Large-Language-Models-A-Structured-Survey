@@ -8,7 +8,7 @@ This repository presents a detailed summary and personal interpretation of the p
 
 -  **Medium Article**: [Efficient Reasoning in LLMs](https://medium.com/@chandinisaisri.uppuganti/efficient-reasoning-in-large-language-models-a-structured-survey-85b2a12169c9)
 -  **YouTube Video Presentation**: [Watch Here](https://youtu.be/tQNJ8VnizSM)
--  **Slide Deck (PDF)**: [Available in this repository](./Efficient%20Reasoning%20in%20Large%20Language%20Models%20.ppt)
+-  **Slide Deck (PDF)**: [Available in this repository](https://github.com/chandini2595/Efficient-Reasoning-in-Large-Language-Models-A-Structured-Survey/blob/main/Efficient%20Reasoning%20in%20Large%20Language%20Models%20.ppt)
 -  **Original Paper (arXiv)**: [arxiv.org/abs/2503.16419](https://arxiv.org/abs/2503.16419)
 
 ---
@@ -32,27 +32,18 @@ It also discusses evaluation techniques, model compression, and practical applic
 - Demonstrated how prompting and routing strategies can optimize inference dynamically.
 - Reflected on implications for small model deployment, data efficiency, and agentic AI.
 
----
 
-##  Tools / Libraries Used
-
-- Microsoft PowerPoint (for slide deck)
-- Medium (for article publication)
-- YouTube (for video walkthrough)
-- GitHub (repository hosting)
-- No external code or libraries used in this project (documentation-focused submission)
 
 ---
 
 ##  Citation
 
 **Original Paper**:  
-Uppuganti, C. S. (2024). _Efficient Reasoning in Large Language Models: A Structured Survey_. arXiv preprint [arXiv:2503.16419](https://arxiv.org/abs/2503.16419).
+_Efficient Reasoning in Large Language Models: A Structured Survey_. arXiv preprint [arXiv:2503.16419](https://arxiv.org/abs/2503.16419).
 
 ---
-
-##  How to Navigate
+# How to Navigate
 
 - Start by reading the [Medium article](https://medium.com/@chandinisaisri.uppuganti/efficient-reasoning-in-large-language-models-a-structured-survey-85b2a12169c9) for a paraphrased overview.
-- View the [Slide Deck](./Efficient%20Reasoning%20in%20Large%20Language%20Models%20.ppt) for structured visual explanation.
+- View the [Slide Deck](https://github.com/chandini2595/Efficient-Reasoning-in-Large-Language-Models-A-Structured-Survey/blob/main/Efficient%20Reasoning%20in%20Large%20Language%20Models%20.ppt) for structured visual explanation.
 - Watch the [YouTube video](https://youtu.be/tQNJ8VnizSM) for a full walkthrough.
