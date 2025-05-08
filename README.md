@@ -1,122 +1,58 @@
 # Efficient Reasoning in Large Language Models: A Structured Survey
 
-
-
-**Efficient Reasoning in Large Language Models: A Structured Survey**  
-Author: Chandini Saisri Uppuganti  
-[Read the medium article here](https://medium.com/@chandinisaisri.uppuganti/efficient-reasoning-in-large-language-models-a-structured-survey-85b2a12169c9)
-
-
-**Youtube Link**: [Youtube Video](https://medium.com/@chandinisaisri.uppuganti/efficient-reasoning-in-large-language-models-a-structured-survey-85b2a12169c9)
+This repository presents a detailed summary and personal interpretation of the paper **"Efficient Reasoning in Large Language Models"**, organized as part of a multi-format academic deliverable including article, slides, and video.
 
 ---
 
-## Introduction
+##  Links
 
-Large Language Models (LLMs) have demonstrated impressive reasoning abilities, but often at the cost of efficiency, with verbose outputs and increased latency. This survey explores how to reduce unnecessary reasoning steps without sacrificing performance. The study is structured around three key strategies:
-
-- **Model-Based Efficiency**
-- **Reasoning Output-Based Efficiency**
-- **Input Prompt-Based Efficiency**
-
----
-
-## 1. Model-Based Efficiency
-
-### 1.1 Reinforcement Learning with Length-Aware Rewards
-Incorporates reward functions that penalize excessive reasoning steps while maintaining accuracy. Examples: OpenAI o1, DeepSeek-R1, QwQ-32B.
-
-### 1.2 Supervised Fine-Tuning (SFT)
-Fine-tunes models using variable-length Chain-of-Thought (CoT) datasets:
-- Post-Reasoning Compression (e.g., TokenSkip, C3oT)
-- During-Reasoning Compression (e.g., Token-Budget, BoN Sampling)
-
-### 1.3 Progressive Fine-Tuning
-Gradually shortens reasoning steps during training (e.g., CoT-Valve).
-
-### 1.4 Model Merging
-Combines models with different reasoning behaviors to create efficient hybrids (e.g., Kimi k1.5).
+-  **Medium Article**: [Efficient Reasoning in LLMs](https://medium.com/@chandinisaisri.uppuganti/efficient-reasoning-in-large-language-models-a-structured-survey-85b2a12169c9)
+-  **YouTube Video Presentation**: [Watch Here](https://youtu.be/tQNJ8VnizSM)
+-  **Slide Deck (PDF)**: [Available in this repository](./Efficient%20Reasoning%20in%20Large%20Language%20Models%20.ppt)
+-  **Original Paper (arXiv)**: [arxiv.org/abs/2503.16419](https://arxiv.org/abs/2503.16419)
 
 ---
 
-## 2. Reasoning Output-Based Efficiency
+##  Description of the Paper
 
-### 2.1 Latent Reasoning Representations
-Reasoning is compressed into model internals instead of explicit steps:
-- Continuous thought tokens (Coconut)
-- Distilled CoT tokens (CCOT, CODI)
-- Auxiliary modules (SoftCoT)
+The paper explores how to make LLMs not only accurate but also efficient in their reasoning. It presents a structured taxonomy of methods to reduce unnecessary reasoning steps without compromising correctness, grouped into three categories:
+- Model-Based Efficiency
+- Output-Based Efficiency
+- Prompt-Based Efficiency
 
-### 2.2 Dynamic Inference Strategies
-Smarter decoding and adaptive computation:
-- Beam Search, Monte Carlo Tree Search (MCTS)
-- Certainty-based stopping (Dynasor-CoT, Certaindex)
-- Summarization-based methods (LightThinker, InftyThink)
+It also discusses evaluation techniques, model compression, and practical applications of efficient reasoning in real-world domains like healthcare and autonomous systems.
 
 ---
 
-## 3. Input Prompt-Based Efficiency
+##  Key Contributions and Insights
 
-### 3.1 Prompt-Guided Efficiency
-Designs prompts to guide concise reasoning:
-- Token-Budget prompts
-- Chain-of-Draft (CoD)
-- CCoT and MARP strategies
-
-### 3.2 Attribute-Driven Routing
-Routes queries to the most suitable reasoning strategy:
-- RouteLLM, Claude Sonnet, Self-Ref, Sketch-of-Thought (SoT)
+- Identified and organized 3 core strategies for improving reasoning efficiency in LLMs.
+- Analyzed advanced CoT variants such as Tree-of-Thought and Graph-of-Thought.
+- Summarized RL-based and fine-tuning approaches for model-level optimization.
+- Demonstrated how prompting and routing strategies can optimize inference dynamically.
+- Reflected on implications for small model deployment, data efficiency, and agentic AI.
 
 ---
 
-## 4. Data and Model Compression
+##  Tools / Libraries Used
 
-### 4.1 Efficient Training Data
-Use fewer, higher-quality examples to train reasoning:
-- LIMO, s1K, S²R show high performance with minimal data.
-
-### 4.2 Small Model Optimization
-Improve reasoning in small models via:
-- Distillation (CoT + PoT)
-- Compression (quantization, LoRA)
+- Microsoft PowerPoint (for slide deck)
+- Medium (for article publication)
+- YouTube (for video walkthrough)
+- GitHub (repository hosting)
+- No external code or libraries used in this project (documentation-focused submission)
 
 ---
 
-## 5. Evaluation & Benchmarks
+##  Citation
 
-Includes:
-- Sys2Bench, Bag of Tricks, S1-Bench for task-specific reasoning evaluation.
-- Overthinking detection frameworks to avoid redundant logic.
-- QuantRM and CompressionReasoning for measuring compression effects.
+**Original Paper**:  
+Uppuganti, C. S. (2024). _Efficient Reasoning in Large Language Models: A Structured Survey_. arXiv preprint [arXiv:2503.16419](https://arxiv.org/abs/2503.16419).
 
 ---
 
-## 6. Applications
+##  How to Navigate
 
-Efficient reasoning techniques enable practical use of LLMs in:
-- **Autonomous Driving**: Real-time decision-making from sensor fusion.
-- **Embodied AI**: Human-like reasoning in robotics.
-- **Healthcare**: Faster and more explainable diagnostics.
-- **Recommender Systems**: Transparent, token-efficient personalization.
-
----
-
-## 7. Discussion and Future Directions
-
-Topics include:
-- Hybrid SFT and RL training strategies.
-- Meta-reasoners and task decomposition frameworks.
-- Safety-efficiency tradeoffs and agentic AI architectures.
-
----
-
-## Conclusion
-
-Efficient reasoning is a critical step forward for scalable, responsible, and cost-effective deployment of LLMs across industries. This work provides a comprehensive taxonomy and opens new directions for research and real-world impact.
-
----
-
-## Citation
-
-Please cite the original article by Chandini Saisri Uppuganti:  
-[Efficient Reasoning in LLMs (Medium)](https://medium.com/@chandinisaisri.uppuganti/efficient-reasoning-in-large-language-models-a-structured-survey-85b2a12169c9)
+- Start by reading the [Medium article](https://medium.com/@chandinisaisri.uppuganti/efficient-reasoning-in-large-language-models-a-structured-survey-85b2a12169c9) for a paraphrased overview.
+- View the [Slide Deck](./Efficient%20Reasoning%20in%20Large%20Language%20Models%20.ppt) for structured visual explanation.
+- Watch the [YouTube video](https://youtu.be/tQNJ8VnizSM) for a full walkthrough.
